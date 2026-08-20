@@ -601,6 +601,8 @@
   display: block !important;
 
   pointer-events: auto;
+
+  touch-action: pan-y !important;
 }
 
 /* ==========================================================

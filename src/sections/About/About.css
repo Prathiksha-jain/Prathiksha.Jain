@@ -1657,3 +1657,39 @@
     border-radius: 10px;
   }
 }
+/* =========================================================
+   MOBILE — FORCE NORMAL PAGE FLOW (NO SECTION SCROLL LOCK)
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .about-section {
+    height: auto !important;
+    min-height: 100svh;
+
+    overflow: visible !important;
+
+    scroll-snap-align: none !important;
+    scroll-snap-stop: normal !important;
+  }
+
+  .about-content {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .about-info {
+    height: auto !important;
+    max-height: none !important;
+
+    overflow-y: visible !important;
+    overflow-x: visible !important;
+
+    padding-right: 0;
+  }
+
+  .about-info::-webkit-scrollbar {
+    display: none;
+  }
+
+}

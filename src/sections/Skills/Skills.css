@@ -1604,3 +1604,52 @@
     overflow-y: visible;
   }
 }
+
+@media (max-width: 700px) {
+
+  .skills-groups {
+    height: auto;
+    min-height: 0;
+
+    grid-template-rows: none;
+  }
+
+  .skills-group {
+    min-height: 0;
+  }
+
+}
+
+/* =========================================================
+   MOBILE — FORCE NORMAL PAGE FLOW (NO SECTION SCROLL LOCK)
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .skills-section {
+    height: auto !important;
+    min-height: 100svh;
+
+    overflow: visible !important;
+
+    scroll-snap-align: none !important;
+    scroll-snap-stop: normal !important;
+  }
+
+  .skills-content {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .skills-groups {
+    height: auto !important;
+    min-height: 0 !important;
+
+    grid-template-rows: none;
+  }
+
+  .skills-group {
+    min-height: 0;
+  }
+
+}

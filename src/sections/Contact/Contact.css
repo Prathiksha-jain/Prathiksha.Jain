@@ -1368,3 +1368,31 @@
     transition: none !important;
   }
 }
+
+/* =========================================================
+   MOBILE — FORCE NORMAL PAGE FLOW (NO SECTION SCROLL LOCK)
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .contact-section {
+    height: auto !important;
+    min-height: 100svh;
+
+    overflow: visible !important;
+
+    scroll-snap-align: none !important;
+    scroll-snap-stop: normal !important;
+  }
+
+  .contact-content {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .contact-stage {
+    height: auto !important;
+    min-height: 260px;
+  }
+
+}

@@ -301,12 +301,21 @@
   .si-header, .si-footer { padding: 22px 22px 26px; }
   .si-type-layer { padding: 100px 20px; }
   .si-word-top { font-size: clamp(28px, 8vw, 46px); }
-  .si-word-bottom { font-size: clamp(38px, 13vw, 72px); }
-  .si-word-accent { font-size: clamp(20px, 5vw, 30px); }
+  .si-bottom-name {
+    font-size: clamp(30px, 9.5vw, 58px);
+    white-space: normal;
+    padding: 0 16px;
+    line-height: 1.05;
+  }
+  .si-word-accent {
+    font-size: clamp(20px, 5vw, 30px);
+    white-space: normal;
+    padding: 0 16px;
+    text-align: center;
+  }
   .si-photo-gap { height: calc(var(--si-photo-h) + 40px); }
   .si-corner-bl, .si-corner-br { display: none; }
 }
-
 @media (prefers-reduced-motion: reduce) {
   .si-star, .si-scroll-icon i { animation: none; }
   .si-cursor-glow { transition: none; }
